@@ -22,31 +22,6 @@ public class LoadingTimeInterceptor implements HandlerInterceptor {
 
     // Logger para registrar los eventos en el sistema de logs
     private static final Logger logger = LoggerFactory.getLogger(LoadingTimeInterceptor.class);
-
-    /**
-     * Se ejecuta después de que el controlador maneja la solicitud, pero antes de
-     * que se renderice la vista.
-     * 
-     * @param request      objeto HttpServletRequest que contiene la solicitud del
-     *                     cliente.
-     * @param response     objeto HttpServletResponse que contiene la respuesta del
-     *                     servidor.
-     * @param handler      el controlador que maneja la solicitud.
-     * @param modelAndView la vista y el modelo a renderizar.
-     * @throws Exception si ocurre algún error.
-     */
-
-    /**
-     * Se ejecuta antes de que el controlador maneje la solicitud.
-     * 
-     * @param request  objeto HttpServletRequest que contiene la solicitud del
-     *                 cliente.
-     * @param response objeto HttpServletResponse que contiene la respuesta del
-     *                 servidor.
-     * @param handler  el controlador que maneja la solicitud.
-     * @return true si la ejecución debe continuar, false si se detiene.
-     * @throws Exception si ocurre algún error.
-     */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
